@@ -130,7 +130,7 @@ class HeapAlertas:
 import pymysql
 
 db = pymysql.connect(
-    host='20.206.250.78',
+    host='localhost',
     user='root',
     password='123',
     database='SFGB'
@@ -239,7 +239,7 @@ def on_message(client, userdata, msg):
 client = mqtt.Client()
 client.on_message = on_message
 
-client.connect("20.206.250.78", 1883, 60)
+client.connect("localhost", 1883, 60)
 
 # Aqui a mudança para escutar todos os sensores no padrão deviceXXX
 client.subscribe("/TEF/device/+")
