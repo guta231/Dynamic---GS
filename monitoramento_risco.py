@@ -131,6 +131,7 @@ import pymysql
 
 db = pymysql.connect(
     host='localhost',
+    port=4343,
     user='admin_gustavo',
     password='@SAVEFOREST1',
     database='sfgb'
